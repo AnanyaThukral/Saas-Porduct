@@ -36,7 +36,7 @@ document.querySelector('.button-container')
     let text = document.querySelector('#filter-jobs').value 
     getJobs().then(jobs => {
         let filteredJobs = filterJobs(jobs, text)
-        console.log(filteredJobs)
+        showJobs(filteredJobs)
     }) 
 })
 
